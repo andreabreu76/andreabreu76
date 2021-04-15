@@ -1,3 +1,6 @@
+Olá, bem vindo... 
+
+```go
 package main
 
 import (
@@ -35,3 +38,4 @@ func NewBio(name string) *Bio {
 func NewStack(languages, databases, misc, ongoing []string) *Stack {
 	return &Stack{languages, databases, misc, ongoing}
 }
+```
