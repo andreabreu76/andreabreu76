@@ -10,10 +10,13 @@ import (
 func main() {
 	me := profile.NewBio("Andre Abreu")
 	stack := profile.NewStack(
-		[]string{"PHP / Laravel", "Go", "Python / IoT", "Javascript", "C"},
+		[]string{"PHP / Laravel", "Go", "Python / IoT", "VueJS/NodeJS/Javascript", "C", "Shellscript"},
 		[]string{"Postgres", "Mysql", "SQLite", "MongoDB"},
 		[]string{"Docker", "Kubernets", "AWS", "Azure"},
-		[]string{"Vue.js"},
+		[]string{"Kambam","Cleancode","DevOPS", "Linux", "Git/Bitbucket/CodeCommit"},
+		[]string{"LPIC 1/2/3","CCNA/E", "Compitia Secure+", "Stonegate", "EMC+", "AWS"}
+		[]string{"Girl father","Husband in love","Photographer","Outlander/Camper","Woodworker"}
+		[]string{"Colaborative team work","Good relationship","Peart", "Good tempered"}
 	)
 	_ = me
 	_ = stack
@@ -27,15 +30,18 @@ type Bio struct {
 	Name string
 }
 type Stack struct {
-	languages []string
-	databases []string
-	misc      []string
-	ongoing   []string
+	languages    []string
+	databases    []string
+	ambient      []string
+	sideskills   []string
+	certificates []string
+	hobbys	     []string
+	personality  []string		
 }
 func NewBio(name string) *Bio {
 	return &Bio{name}
 }
 func NewStack(languages, databases, misc, ongoing []string) *Stack {
-	return &Stack{languages, databases, misc, ongoing}
+	return &Stack{languages, databases, ambient, sideskills, certificates, hobbys, personality}
 }
 ```
