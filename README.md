@@ -1,4 +1,4 @@
-Olá, bem vindo... 
+Olá, Bem vindo 👋 / Hi, wellcome 👋 / Hola, bienvenido 👋 / Bonjour bienvenue 👋 / हैलो आपका स्वागत है 👋 
 
 ```go
 package main
