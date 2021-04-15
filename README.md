@@ -21,8 +21,10 @@ func main() {
 	_ = me
 	_ = stack
 }
+
 -- go.mod --
 module play.ground
+
 -- profile/profile.go --
 package profile
 
