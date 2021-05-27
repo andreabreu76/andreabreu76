@@ -35,7 +35,7 @@ type Stack struct {
 	languages    []string
 	databases    []string
 	ambient      []string
-	sideskills   []string
+	sideSkills   []string
 	certificates []string
 	hobbys	     []string
 	personality  []string		
@@ -44,6 +44,6 @@ func NewBio(name string) *Bio {
 	return &Bio{name}
 }
 func NewStack(languages, databases, misc, ongoing []string) *Stack {
-	return &Stack{languages, databases, ambient, sideskills, certificates, hobbys, personality}
+	return &Stack{languages, databases, ambient, sideSkills, certificates, hobbys, personality}
 }
 ```
