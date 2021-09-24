@@ -15,7 +15,7 @@ func main() {
 		[]string{"Docker", "Kubernets", "AWS", "Azure"},
 		[]string{"Kambam","Cleancode","DevOPS", "Linux", "Git/Bitbucket/CodeCommit"},
 		[]string{"LPIC 1/2/3","CCNA/E", "Compitia Secure+", "Stonegate", "EMC+", "AWS"}
-		[]string{"Girl father","Husband in love","Photographer","Outlander/Camper","Woodworker", "Harley Owner Group Member", "Land Rover Defender Owner Group Member" }
+		[]string{"Girl father","Husband in love","Photographer","Outlander/Camper","Woodworker", "H.O.G." }
 		[]string{"Colaborative team work","Good relationship","Peart", "Good tempered"}
 	)
 	_ = me
