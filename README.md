@@ -47,3 +47,13 @@ func NewStack(languages, databases, misc, ongoing []string) *Stack {
 	return &Stack{languages, databases, ambient, sideSkills, certificates, hobbys, personality}
 }
 ```
+My Stats
+
+**My GitHub Stats**
+ <div>
+  <a href="https://github.com/andreabreu76">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=andreabreu76&show_icons=true&theme=nord&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andreabreu76&layout=compact&langs_count=7&theme=nord"/>
+  </a>
+</div>
+<br>
