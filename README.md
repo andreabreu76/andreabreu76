@@ -47,8 +47,6 @@ func NewStack(languages, databases, misc, ongoing []string) *Stack {
 	return &Stack{languages, databases, ambient, sideSkills, certificates, hobbys, personality}
 }
 ```
-My Stats
-
 **My GitHub Stats**
  <div>
   <a href="https://github.com/andreabreu76">
