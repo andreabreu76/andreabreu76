@@ -1,6 +1,6 @@
-Olá, Bem vindo 👋 / Hi, wellcome 👋 / Hola, bienvenido 👋 / Bonjour bienvenue 👋 / हैलो आपका स्वागत है 👋 
+Olá, Bem vindo 👋 / Hi, wellcome 👋 / Hola, bienvenido 👋 / Bonjour bienvenue 👋 / हैलो आपका स्वागत है 👋
 
-My profile in pdf, [click here](202201-Curriculum-AndreAbreu.pdf)
+My profile in pdf, [Portuguese](202308-Curriculum-AndreAbreu.pdf) [English] (202308-Curriculum-AndreAbreu-EN.pdf)
 
 ```go
 package main
@@ -40,7 +40,7 @@ type Stack struct {
 	sideSkills   []string
 	certificates []string
 	hobbys	     []string
-	personality  []string		
+	personality  []string
 }
 func NewBio(name string) *Bio {
 	return &Bio{name}
@@ -49,7 +49,9 @@ func NewStack(languages, databases, misc, ongoing []string) *Stack {
 	return &Stack{languages, databases, ambient, sideSkills, certificates, hobbys, personality}
 }
 ```
+
 **My GitHub Stats**
+
  <div>
   <a href="https://github.com/andreabreu76">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=andreabreu76&show_icons=true&theme=nord&include_all_commits=true&count_private=true"/>
