@@ -1,6 +1,6 @@
 Olá, Bem vindo 👋 / Hi, wellcome 👋 / Hola, bienvenido 👋 / Bonjour bienvenue 👋 / हैलो आपका स्वागत है 👋
 
-My profile in pdf, [Portuguese](202308-Curriculum-AndreAbreu.pdf) [English] (202308-Curriculum-AndreAbreu-EN.pdf)
+My profile in pdf, [Português do Brasil](202308-Curriculum-AndreAbreu.pdf), [English - EUA](202308-Curriculum-AndreAbreu-EN.pdf)
 
 ```go
 package main
