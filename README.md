@@ -12,16 +12,16 @@ import (
 func main() {
 	me := profile.NewBio("Andre Abreu")
 	stack := profile.NewStack(
-		[]string{"PHP / Laravel", "Go", "Python / IoT", "VueJS/NodeJS/Javascript", "C", "Shellscript"},
-		[]string{"Postgres", "Mysql", "SQLite", "MongoDB"},
-		[]string{"Docker", "Kubernets", "AWS", "Azure"},
-		[]string{"Kambam","Cleancode","DevOPS", "Linux", "Git/Bitbucket/CodeCommit"},
-		[]string{"LPIC 1/2/3","CCNA/E", "Compitia Secure+", "Stonegate", "EMC+", "AWS"}
-		[]string{"Girl father","Husband in love","Photographer","Outlander/Camper","Woodworker", "H.O.G." }
-		[]string{"Colaborative team work","Good relationship","Peart", "Good tempered"}
+		[]string{"PHP with Laravel and Symfony", "Go with Gin and Fiber", "Python / IoT", "VueJS/NodeJS/Javascript", "C++", "Ruby on Rails", "Shellscript"},
+		[]string{"Postgres", "Mysql", "SQLite", "MongoDB", "DocumentDB", "Redis", "ElasticSearch", "DynamoDB", "FireBase", "FireStore"},
+		[]string{"Docker", "Kubernets", "AWS", "Google Cloud Platform"},
+		[]string{"Kambam", "Cleancode", "DevOPS", "Linux", "Git/Bitbucket/CodeCommit", "Jira", "Confluence", "Trello", "Slack", "Telegram"},
+		[]string{"LPIC 1/2/3", "CCNA/E", "Compitia Secure+", "Stonegate", "EMC+", "AWS", "Google Cloud Platform"},
+		[]string{"Girl father", "Husband in love", "Photographer", "Outlander/Camper", "Woodworker", "H.O.G."},
+		[]string{"Collaborative team work", "Good relationship", "Peart", "Good tempered"},
 	)
-	_ = me
-	_ = stack
+
+	fmt.Println(me, stack)
 }
 
 -- go.mod --
@@ -33,20 +33,23 @@ package profile
 type Bio struct {
 	Name string
 }
+
 type Stack struct {
-	languages    []string
-	databases    []string
-	ambient      []string
-	sideSkills   []string
-	certificates []string
-	hobbys	     []string
-	personality  []string
+	Languages    []string
+	Databases    []string
+	Ambient      []string
+	SideSkills   []string
+	Certificates []string
+	Hobbys       []string
+	Personality  []string
 }
+
 func NewBio(name string) *Bio {
-	return &Bio{name}
+	return &Bio{Name: name}
 }
-func NewStack(languages, databases, misc, ongoing []string) *Stack {
-	return &Stack{languages, databases, ambient, sideSkills, certificates, hobbys, personality}
+
+func NewStack(languages, databases, ambient, sideSkills, certificates, hobbys, personality []string) *Stack {
+	return &Stack{Languages: languages, Databases: databases, Ambient: ambient, SideSkills: sideSkills, Certificates: certificates, Hobbys: hobbys, Personality: personality}
 }
 ```
 
