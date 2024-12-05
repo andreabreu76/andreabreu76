@@ -9,29 +9,41 @@ Eu sou André Abreu, um desenvolvedor apaixonado por tecnologia e inovação. Re
 package main
 
 import (
+	"fmt"
 	"play.ground/profile"
 )
 
 func main() {
-	me := profile.NewBio("Andre Abreu", "Desenvolvedor Go e Entusiasta de Tecnologia")
-	stack := profile.NewStack(
-		[]string{"Go (Goroutines, Docker, CI/CD)", "PHP com Laravel e Symfony", "Python / IoT", "VueJS/NodeJS/Javascript", "C++", "Ruby on Rails", "Shellscript"},
-		[]string{"Postgres", "Mysql", "SQLite", "MongoDB", "DocumentDB", "Redis", "ElasticSearch", "DynamoDB", "FireBase", "FireStore"},
-		[]string{"Docker", "Kubernets", "AWS", "Google Cloud Platform"},
-		[]string{"Kanban", "Clean Code", "DevOps", "Linux", "Git/Bitbucket/CodeCommit", "Jira", "Confluence", "Trello", "Slack", "Telegram"},
-		[]string{"LPIC 1/2/3", "CCNA/E", "CompTIA Security+", "Stonegate", "EMC+", "AWS", "Google Cloud Platform"},
-		[]string{"Pai de Menina", "Marido Apaixonado", "Fotógrafo", "Aventureiro", "Marceneiro", "H.O.G."},
-		[]string{"Trabalho em Equipe", "Bom Relacionamento", "Persistência", "Bom Humor"},
+	me := profile.NewBio(
+		"André Abreu",
+		"Desenvolvedor Go, DevOps, e Entusiasta de Tecnologia e Inovação",
 	)
 
-	fmt.Println(me, stack)
+	stack := profile.NewStack(
+		[]string{"Go (Goroutines, Fiber, Docker, CI/CD)", "PHP (Laravel, Symfony)", "Python (Django, IoT)", "VueJS/NodeJS/JavaScript", "C++", "Ruby on Rails", "Shellscript"},
+		[]string{"Postgres", "MySQL", "SQLite", "MongoDB", "DocumentDB", "Redis", "ElasticSearch", "DynamoDB", "Firebase", "Firestore"},
+		[]string{"Docker", "Kubernetes", "AWS (Terraform, ECS, S3, Lambda)", "Google Cloud Platform", "GitHub Actions", "GitLab CI/CD"},
+		[]string{"Kanban", "Scrum", "Clean Code", "DevOps", "Linux (LPIC 1/2/3)", "Git/Bitbucket/CodeCommit", "Jira", "Confluence", "Trello", "Slack", "Telegram"},
+		[]string{"LPIC 1/2/3", "CCNA/E", "CompTIA Security+", "Stonegate", "EMC+", "AWS Certified", "Google Cloud Certified"},
+		[]string{"Pai de Menina", "Marido Apaixonado", "Motociclista (H.O.G.)", "Fotógrafo", "Aventureiro", "Marceneiro"},
+		[]string{"Trabalho em Equipe", "Empatia", "Resiliência", "Persistência", "Bom Humor", "Comunicação Eficiente"},
+	)
+
+	fmt.Println(me)
+	fmt.Println(stack)
 }
+```
 
-// go.mod
+go.mod
+```go
 module play.ground
+```
 
-// profile/profile.go
+profile/profile.go
+```go
 package profile
+
+import "fmt"
 
 type Bio struct {
 	Name        string
@@ -53,5 +65,30 @@ func NewBio(name, description string) *Bio {
 }
 
 func NewStack(languages, databases, environment, sideSkills, certificates, hobbies, personality []string) *Stack {
-	return &Stack{Languages: languages, Databases: databases, Environment: environment, SideSkills: sideSkills, Certificates: certificates, Hobbies: hobbies, Personality: personality}
+	return &Stack{
+		Languages:    languages,
+		Databases:    databases,
+		Environment:  environment,
+		SideSkills:   sideSkills,
+		Certificates: certificates,
+		Hobbies:      hobbies,
+		Personality:  personality,
+	}
 }
+
+func (b *Bio) String() string {
+	return fmt.Sprintf("👤 Nome: %s\n💼 Descrição: %s\n", b.Name, b.Description)
+}
+
+func (s *Stack) String() string {
+	return fmt.Sprintf(`
+📚 Linguagens: %v
+🗄️ Bancos de Dados: %v
+⚙️ Ambientes/Infraestrutura: %v
+🎯 Habilidades Adicionais: %v
+📜 Certificações: %v
+🎨 Hobbies: %v
+🌟 Personalidade: %v
+`, s.Languages, s.Databases, s.Environment, s.SideSkills, s.Certificates, s.Hobbies, s.Personality)
+}
+```
