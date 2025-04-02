@@ -92,3 +92,7 @@ func (s *Stack) String() string {
 `, s.Languages, s.Databases, s.Environment, s.SideSkills, s.Certificates, s.Hobbies, s.Personality)
 }
 ```
+### Public Stats
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=andreabreu76&theme=default)
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=andreabreu76&theme=default) ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=andreabreu76&theme=default)
