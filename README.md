@@ -5,7 +5,7 @@
 │   André Abreu - Desenvolvedor & DevOps Engineer                              │
 │                                                                              │
 │   andreabreu@eng:~$ cat /etc/motd                                            │
-│   Apaixonado por tecnologia, automação e boas práticas de desenvolvimento.  │
+│   Apaixonado por tecnologia, automação e boas práticas de desenvolvimento.   │
 │   Pai de menina, marido, motociclista (H.O.G.) e aventureiro.                │
 │                                                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
