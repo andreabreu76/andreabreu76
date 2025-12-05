@@ -1,10 +1,10 @@
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                                                                              │
-│   andre@dev:~$ whoami                                                        │
+│   andreabreu@eng:~$ whoami                                                   │
 │   André Abreu - Desenvolvedor & DevOps Engineer                              │
 │                                                                              │
-│   andre@dev:~$ cat /etc/motd                                                 │
+│   andreabreu@eng:~$ cat /etc/motd                                            │
 │   Apaixonado por tecnologia, automação e boas práticas de desenvolvimento.  │
 │   Pai de menina, marido, motociclista (H.O.G.) e aventureiro.                │
 │                                                                              │
@@ -12,58 +12,43 @@
 ```
 
 ```bash
-andre@dev:~$ cat skills.json | jq '.languages'
+andreabreu@eng:~$ cat ~/.config/skills.toml
 ```
-```json
-["Go", "PHP", "Python", "JavaScript/Node", "C++", "Ruby", "Shell"]
-```
+```toml
+[languages]
+main = ["Go", "PHP", "Python", "JavaScript/Node"]
+secondary = ["C++", "Ruby", "Shell"]
 
-```bash
-andre@dev:~$ cat skills.json | jq '.databases'
-```
-```json
-["PostgreSQL", "MySQL", "MongoDB", "Redis", "ElasticSearch", "DynamoDB", "Firebase"]
-```
+[databases]
+relational = ["PostgreSQL", "MySQL"]
+nosql = ["MongoDB", "Redis", "ElasticSearch", "DynamoDB", "Firebase"]
 
-```bash
-andre@dev:~$ cat skills.json | jq '.devops'
-```
-```json
-["Docker", "Kubernetes", "AWS", "GCP", "Terraform", "GitHub Actions", "GitLab CI/CD"]
-```
+[devops]
+containers = ["Docker", "Kubernetes"]
+cloud = ["AWS", "GCP", "Terraform"]
+ci_cd = ["GitHub Actions", "GitLab CI/CD"]
 
-```bash
-andre@dev:~$ cat skills.json | jq '.certifications'
-```
-```json
-["LPIC 1/2/3", "CCNA/E", "CompTIA Security+", "AWS Certified", "Google Cloud Certified"]
-```
+[certifications]
+linux = ["LPIC 1", "LPIC 2", "LPIC 3"]
+network = ["CCNA", "CCNE"]
+security = ["CompTIA Security+"]
+cloud = ["AWS Certified", "Google Cloud Certified"]
 
-```bash
-andre@dev:~$ ls -la ~/soft-skills/
-```
-```
-drwxr-xr-x  trabalho-em-equipe/
-drwxr-xr-x  comunicacao-eficiente/
-drwxr-xr-x  resiliencia/
-drwxr-xr-x  empatia/
--rw-r--r--  bom-humor.conf
-```
+[soft_skills]
+team = ["Trabalho em Equipe", "Comunicação Eficiente"]
+personal = ["Resiliência", "Empatia", "Bom Humor"]
 
-```bash
-andre@dev:~$ cat ~/.profile | grep CONTACT
-```
-```bash
-export LINKEDIN="linkedin.com/in/intfrr"
-export GITHUB="github.com/andreabreu76"
-export CV_PT="202308-Curriculum-AndreAbreu.pdf"
-export CV_EN="202308-Curriculum-AndreAbreu-EN.pdf"
+[contact]
+linkedin = "linkedin.com/in/intfrr"
+github = "github.com/andreabreu76"
+cv_pt = "202308-Curriculum-AndreAbreu.pdf"
+cv_en = "202308-Curriculum-AndreAbreu-EN.pdf"
 ```
 
 ---
 
 ```bash
-andre@dev:~$ neofetch --github-stats
+andreabreu@eng:~$ neofetch --github-stats
 ```
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=andreabreu76&theme=github_dark)
