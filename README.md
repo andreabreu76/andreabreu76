@@ -33,6 +33,12 @@ aws = ["Terraform", "ECS", "S3", "Lambda"]
 gcp = "Google Cloud Platform"
 ci_cd = ["GitHub Actions", "GitLab CI/CD"]
 
+[ai]
+platform = "Anthropic Claude"
+models = ["Claude Opus", "Claude Sonnet", "Claude Haiku"]
+development = ["MCP Servers", "Tools", "Artifacts", "Prompt Engineering"]
+tools = ["Claude Code", "Claude Desktop", "Claude SDK", "Anthropic API"]
+
 [tools]
 methodology = ["Kanban", "Scrum", "Clean Code", "DevOps"]
 linux = "LPIC 1/2/3"
