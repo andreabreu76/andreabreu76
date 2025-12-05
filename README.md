@@ -16,27 +16,43 @@ andreabreu@eng:~$ cat ~/.config/skills.toml
 ```
 ```toml
 [languages]
-main = ["Go", "PHP", "Python", "JavaScript/Node"]
-secondary = ["C++", "Ruby", "Shell"]
+go = "Goroutines, Fiber, Docker, CI/CD"
+php = "Laravel, Symfony"
+python = "Django, IoT"
+javascript = "VueJS, NodeJS"
+others = ["C++", "Ruby on Rails", "Shellscript"]
 
 [databases]
-relational = ["PostgreSQL", "MySQL"]
-nosql = ["MongoDB", "Redis", "ElasticSearch", "DynamoDB", "Firebase"]
+relational = ["PostgreSQL", "MySQL", "SQLite"]
+nosql = ["MongoDB", "DocumentDB", "Firebase", "Firestore"]
+cache = ["Redis", "ElasticSearch", "DynamoDB"]
 
 [devops]
 containers = ["Docker", "Kubernetes"]
-cloud = ["AWS", "GCP", "Terraform"]
+aws = ["Terraform", "ECS", "S3", "Lambda"]
+gcp = "Google Cloud Platform"
 ci_cd = ["GitHub Actions", "GitLab CI/CD"]
+
+[tools]
+methodology = ["Kanban", "Scrum", "Clean Code", "DevOps"]
+linux = "LPIC 1/2/3"
+vcs = ["Git", "Bitbucket", "CodeCommit"]
+collaboration = ["Jira", "Confluence", "Trello", "Slack", "Telegram"]
 
 [certifications]
 linux = ["LPIC 1", "LPIC 2", "LPIC 3"]
 network = ["CCNA", "CCNE"]
-security = ["CompTIA Security+"]
+security = ["CompTIA Security+", "Stonegate"]
+storage = "EMC+"
 cloud = ["AWS Certified", "Google Cloud Certified"]
+
+[hobbies]
+family = ["Pai de Menina", "Marido Apaixonado"]
+adventure = ["Motociclista (H.O.G.)", "Fotógrafo", "Aventureiro", "Marceneiro"]
 
 [soft_skills]
 team = ["Trabalho em Equipe", "Comunicação Eficiente"]
-personal = ["Resiliência", "Empatia", "Bom Humor"]
+personal = ["Empatia", "Resiliência", "Persistência", "Bom Humor"]
 
 [contact]
 linkedin = "linkedin.com/in/intfrr"
