@@ -38,6 +38,7 @@ platform = "Anthropic Claude"
 models = ["Claude Opus", "Claude Sonnet", "Claude Haiku"]
 development = ["MCP Servers", "Tools", "Artifacts", "Prompt Engineering"]
 tools = ["Claude Code", "Claude Desktop", "Claude SDK", "Anthropic API"]
+techniques = ["RAG", "Embeddings", "Vector Search", "Fine-tuning", "Agents"]
 
 [tools]
 methodology = ["Kanban", "Scrum", "Clean Code", "DevOps"]
