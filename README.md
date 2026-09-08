@@ -74,7 +74,7 @@ travel distribution platform · SOAP → REST migration
 ## ALSO IN CONTEXT
 
 ```
-languages   Python · Ruby · C++ · TypeScript/JavaScript (Node, Vue, Next, React)
+languages   Go · Python · Ruby · C++ · TypeScript/JavaScript (Node, Vue, Next, React)
 practice    SOLID · design patterns · Clean Code · Kanban · Scrum · DevOps
 systems     Linux (LPIC 1/2/3 track) · shell automation · legacy maintenance
 ```
